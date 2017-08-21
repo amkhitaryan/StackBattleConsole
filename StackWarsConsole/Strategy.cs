@@ -516,7 +516,6 @@ namespace StackWarsConsole
                 hitArmy[0].IsAlive() && defArmy[0].IsAlive())
             {
                 int randomValue = _randomValue.Next(-20, 20);
-                //if (doHitArmyList[0].Strength <= 0) return; // Гуляй город не бьет
                 defArmy[0].GetHit(hitArmy[0].Strength - defArmy[0].Armor + randomValue);
                 if (defArmy[0].Health < 0) defArmy[0].Health = 0;
                 Console.WriteLine(hitArmy[0].GetType().Name + "(" + hitArmy[0].Health + ")" +
@@ -986,7 +985,6 @@ namespace StackWarsConsole
             //Обратка
             Hit(defArmy, hitArmy, "Jack Daniel");
 
-
             //Далее, начиная со второй позиции, юниты совершают специальные действия
             //Это всегда будет только одна из армий
             List<IUnit> _hitarmy;
@@ -1030,7 +1028,7 @@ namespace StackWarsConsole
                             infantry.GiveBuff(ref armored);
                             _hitarmy[j - 1] = armored;
                         }
-                        else if(!(armored is Horseman))
+                        else if (!(armored is Horseman))
                         {
                             if (j == _hitarmy.Count - 1) break; //Оруженосец в конце строя, за ним никого нет
                             armored = _hitarmy[j + 1] as IHeavyUnit;
@@ -1051,7 +1049,7 @@ namespace StackWarsConsole
                     //Если это лучник, стреляет во врагов
                     else if (_hitarmy[j] is Archer)
                     {
-                        _randomValue = new Random((int)DateTime.Now.Ticks);
+                        _randomValue = new Random((int) DateTime.Now.Ticks);
                         var archer = (Archer) _hitarmy[j];
                         if (archer.IsAlive())
                         {
@@ -1071,7 +1069,8 @@ namespace StackWarsConsole
                                                   ") на позиции[" + concreteUnit + "] из армии" + _defarmystr + ".");
                                 if (!_defarmy[concreteUnit].IsAlive())
                                 {
-                                    Console.WriteLine("С поля боя унесли дряблое тело " + _defarmy[concreteUnit].GetType().Name +
+                                    Console.WriteLine("С поля боя унесли дряблое тело " +
+                                                      _defarmy[concreteUnit].GetType().Name +
                                                       "'а с позиции[" + concreteUnit + "].");
                                     _defarmy.RemoveAt(concreteUnit);
                                     if (_defarmy.Count == 0) Engine.GameOver(_hitarmy, "Captain Morgan");
@@ -1094,7 +1093,7 @@ namespace StackWarsConsole
                     //Если это лекарь
                     else if (_hitarmy[j] is Cleric)
                     {
-                        _randomValue = new Random((int)DateTime.Now.Ticks);
+                        _randomValue = new Random((int) DateTime.Now.Ticks);
                         if (_hitarmy[j].IsAlive())
                         {
                             if (j != _hitarmy.Count - 1) // Если не на последней позиции
@@ -1294,7 +1293,7 @@ namespace StackWarsConsole
                     if (!defArmy[i].IsAlive())
                     {
                         Console.WriteLine("С поля боя унесли дряблое тело " + defArmy[i].GetType().Name +
-                                      "'а с позиции[" + i + "].");
+                                          "'а с позиции[" + i + "].");
                         defArmy.RemoveAt(i);
                         if (defArmy.Count == 0) Engine.GameOver(hitArmy, "Captain Morgan");
                         else if (i < defArmy.Count)
@@ -1308,11 +1307,11 @@ namespace StackWarsConsole
                         new Infantry().DeBuff(ref tmp);
                         defArmy[i] = tmp;
                     }
-                    
+
                 }
             }
             Console.WriteLine();
         }
     }
-    }
+}
 

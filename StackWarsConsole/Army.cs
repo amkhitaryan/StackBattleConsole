@@ -12,16 +12,6 @@ namespace StackWarsConsole
         public string Name { get; }
 
         public List<IUnit> CompleteArmyList = new List<IUnit>();
-
-        /// <summary>
-        /// Для сохранения состояния списка юнитов
-        /// </summary>
-        /// <param name="stateToChange">Сохраняемый список</param>
-        /// <returns>Независимую копию списка</returns>
-        //public List<IUnit> ChangeState(List<IUnit> stateToChange)
-        //{
-        //    return DeepClone.DoDeepClone(stateToChange);
-        //}
         
         public void CreateArmy()
         {

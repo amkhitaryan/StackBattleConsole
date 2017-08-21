@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StackWarsConsole
 {
@@ -59,7 +56,6 @@ namespace StackWarsConsole
             Console.Write("#");
             while (true)
             {
-                //Console.Clear();
                 try
                 {
                     key = Convert.ToInt32(Console.ReadLine());
@@ -148,7 +144,6 @@ namespace StackWarsConsole
                             {
                                 gameEngine.NextTurn(captainMorgan.CompleteArmyList, jackDaniel.CompleteArmyList, _combatMode);
                             }
-                            //gameEngine.War(captainMorgan.CompleteArmyList, jackDaniel.CompleteArmyList);
                         }
                         else
                         {
@@ -218,7 +213,6 @@ namespace StackWarsConsole
                         break;
                 }
                 Console.Write("#");
-                //Console.ReadKey();
             }
         }
     }

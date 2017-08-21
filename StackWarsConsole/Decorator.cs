@@ -134,7 +134,6 @@ namespace StackWarsConsole
         public Swordman(IHeavyUnit unit) : base(unit)
         {
             base.HasSword = true;
-            //base.HasShield = false;
         }
 
         public override int Strength
@@ -168,7 +167,6 @@ namespace StackWarsConsole
         public Knight(IHeavyUnit unit) : base(unit)
         {
             base.HasHelmet = true;
-            //_unit.HasHorse = false;
         }
 
         public override bool HasSword => _unit.HasSword;
@@ -204,7 +202,6 @@ namespace StackWarsConsole
         {
             
             base.HasShield = true;
-            //base.HasHelmet = false;
         }
 
         public override bool HasSword => _unit.HasSword;

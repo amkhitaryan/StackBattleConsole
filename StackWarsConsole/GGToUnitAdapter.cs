@@ -43,6 +43,4 @@ namespace StackWarsConsole
             return !_gorod.IsDead;
         }
     }
-
-    
 }

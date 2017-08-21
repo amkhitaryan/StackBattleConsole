@@ -22,7 +22,6 @@ namespace StackWarsConsole
             return new Armored();
         }
     }
-
     /// <summary>
     /// Фабрика для создания Infantry
     /// </summary>

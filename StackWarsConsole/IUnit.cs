@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace StackWarsConsole
 {
@@ -10,7 +6,7 @@ namespace StackWarsConsole
     {
         int Health      { get; set; }
         int Strength    { get; set; }
-        int Armor       { get; set; }
+        int Armor       { get; set; } 
         int Cost        { get; set; }
 
         int     GetHit(int value);

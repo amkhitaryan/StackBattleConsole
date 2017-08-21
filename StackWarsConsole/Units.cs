@@ -73,8 +73,6 @@ namespace StackWarsConsole
 
         public void GiveBuff(ref IHeavyUnit unit)
         {
-            //Random rand = new Random(DateTime.Now.Millisecond);
-            //if (rand.Next(0, 4) != 2) return; //25% шанс
             {
                 //Декорируем(обертываем) объект с помощью конкретных декораторов
                 var tUnit = unit as ArmoredDecoratorBase;
@@ -285,8 +283,6 @@ namespace StackWarsConsole
 
         public void DoSpecialAction(ref List<IUnit> unitList, IUnit unit)
         {
-            //Random rand = new Random((int)DateTime.Now.Ticks);
-            //if ((rand.Next(0, 4) == 2)) //С вероятностью в 25 %
             {
                 unitList.Add(((ICloneable)unit).Clone() as IUnit);
             }

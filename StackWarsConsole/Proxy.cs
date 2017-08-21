@@ -30,7 +30,6 @@ namespace StackWarsConsole
     [Serializable]
     class ProxyMage : Subject
     {
-        //private static string _path = "D:\\Desktop\\ProxyLog.txt";
         private static string _path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\ProxyLog.txt";
 
         private Mage _realSubject;
@@ -115,7 +114,6 @@ namespace StackWarsConsole
                 _realSubject.GetType().Name + "(" + _realSubject.Health + ") взмахнул посохом и клонировал " + unit.GetType().Name +
                 "'a(" + unit.Health + ").", true);
             _realSubject.DoSpecialAction(ref unitList, unit);
-            //unitList.Add(((ICloneable)unit).Clone() as IUnit);
         }
     }
 }
