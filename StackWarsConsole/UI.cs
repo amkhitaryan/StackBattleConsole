@@ -151,6 +151,11 @@ namespace StackWarsConsole
                         }
                         break;
                     case 8:
+                        if (gameEngine == null || jackDaniel == null || captainMorgan == null)
+                        {
+                            Console.WriteLine("Ошибка. Убедитесь, что обе армии созданы и игра загружена.");
+                            break;
+                        }
                         var a = _invoker.Undo(captainMorgan.CompleteArmyList, jackDaniel.CompleteArmyList);
                         if (a == null)
                         {
@@ -162,6 +167,11 @@ namespace StackWarsConsole
                         jackDaniel.CompleteArmyList = a.Item2;
                         break;
                     case 9:
+                        if (gameEngine == null || jackDaniel == null || captainMorgan == null)
+                        {
+                            Console.WriteLine("Ошибка. Убедитесь, что обе армии созданы и игра загружена.");
+                            break;
+                        }
                         var b = _invoker.Redo(captainMorgan.CompleteArmyList, jackDaniel.CompleteArmyList);
                         if (b == null)
                         {
