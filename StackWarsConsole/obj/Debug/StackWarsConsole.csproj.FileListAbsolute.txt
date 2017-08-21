@@ -1,0 +1,32 @@
+C:\Users\Momk\documents\visual studio 2017\Projects\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe.config
+C:\Users\Momk\documents\visual studio 2017\Projects\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe
+C:\Users\Momk\documents\visual studio 2017\Projects\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.pdb
+C:\Users\Momk\documents\visual studio 2017\Projects\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.exe
+C:\Users\Momk\documents\visual studio 2017\Projects\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.pdb
+C:\Users\Андрей\Saved Games\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe.config
+C:\Users\Андрей\Saved Games\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.exe
+C:\Users\Андрей\Saved Games\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.pdb
+C:\Users\Андрей\Saved Games\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe
+C:\Users\Андрей\Saved Games\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.pdb
+C:\Users\Андрей\Saved Games\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.csprojResolveAssemblyReference.cache
+C:\Users\Андрей\Desktop\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe.config
+C:\Users\Андрей\Desktop\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.exe
+C:\Users\Андрей\Desktop\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.pdb
+C:\Users\Андрей\Desktop\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe
+C:\Users\Андрей\Desktop\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.pdb
+C:\Users\Андрей\Desktop\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.csprojResolveAssemblyReference.cache
+C:\Users\Momk\documents\visual studio 2017\Projects\StackWarsConsole\StackWarsConsole\bin\Debug\GG.dll
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe.config
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.pdb
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.csprojResolveAssemblyReference.cache
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.exe
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.pdb
+D:\Workplace\Google Disk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\GulyayGorod.dll
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe.config
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.exe
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.pdb
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.exe
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\StackWarsConsole.pdb
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\bin\Debug\GulyayGorod.dll
+D:\Workplace\GoogleDisk\Университет\6 семестр\Проектирование программной архитектуры\labs\StackWarsConsole\StackWarsConsole\obj\Debug\StackWarsConsole.csprojResolveAssemblyReference.cache
