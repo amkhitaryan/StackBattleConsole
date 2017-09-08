@@ -30,11 +30,16 @@ namespace StackWarsConsole
 
         private int _combatMode = 0;
 
+        private string _errStrNoArmyOrEngine = "Ошибка. Убедитесь, что обе армии созданы и игра загружена.";
+
         public void Menu()
         {
+            // Игровой движок
             Engine gameEngine = null;
+            // Армии
             Army captainMorgan = null, jackDaniel = null;
-            int key;
+            // Выбранный пункт меню
+            int _key;
 
             Console.WriteLine("         Меню:       ");
             Console.WriteLine("1.  Запустить игру");
@@ -58,14 +63,14 @@ namespace StackWarsConsole
             {
                 try
                 {
-                    key = Convert.ToInt32(Console.ReadLine());
+                    _key = Convert.ToInt32(Console.ReadLine());
                 }
                 catch
                 {
                     continue;
                 }
 
-                switch (key)
+                switch (_key)
                 {
                     case 1:
 
@@ -121,7 +126,7 @@ namespace StackWarsConsole
                         }
                         break;
                     case 6:
-                        if (gameEngine != null && jackDaniel != null && captainMorgan != null)
+                        if (ArmyAndEngineExist(gameEngine, jackDaniel, captainMorgan, true))
                         {
                             //Добавляем команду
                             _invoker.AddCommand(
@@ -134,11 +139,11 @@ namespace StackWarsConsole
                         }
                         else
                         {
-                            Console.WriteLine("Ошибка. Убедитесь, что обе армии созданы и игра загружена.");
+                            Console.WriteLine(_errStrNoArmyOrEngine);
                         }
                         break;
                     case 7:
-                        if (gameEngine != null && jackDaniel != null && captainMorgan != null)
+                        if (ArmyAndEngineExist(gameEngine, jackDaniel, captainMorgan, true))
                         {
                             while (captainMorgan.CompleteArmyList.Count != 0 || jackDaniel.CompleteArmyList.Count != 0)
                             {
@@ -147,13 +152,13 @@ namespace StackWarsConsole
                         }
                         else
                         {
-                            Console.WriteLine("Ошибка. Убедитесь, что обе армии созданы и игра загружена.");
+                            Console.WriteLine(_errStrNoArmyOrEngine);
                         }
                         break;
                     case 8:
-                        if (gameEngine == null || jackDaniel == null || captainMorgan == null)
+                        if (ArmyAndEngineExist(gameEngine, jackDaniel, captainMorgan, false))
                         {
-                            Console.WriteLine("Ошибка. Убедитесь, что обе армии созданы и игра загружена.");
+                            Console.WriteLine(_errStrNoArmyOrEngine);
                             break;
                         }
                         var a = _invoker.Undo(captainMorgan.CompleteArmyList, jackDaniel.CompleteArmyList);
@@ -167,9 +172,9 @@ namespace StackWarsConsole
                         jackDaniel.CompleteArmyList = a.Item2;
                         break;
                     case 9:
-                        if (gameEngine == null || jackDaniel == null || captainMorgan == null)
+                        if (ArmyAndEngineExist(gameEngine, jackDaniel, captainMorgan, false))
                         {
-                            Console.WriteLine("Ошибка. Убедитесь, что обе армии созданы и игра загружена.");
+                            Console.WriteLine(_errStrNoArmyOrEngine);
                             break;
                         }
                         var b = _invoker.Redo(captainMorgan.CompleteArmyList, jackDaniel.CompleteArmyList);
@@ -224,6 +229,14 @@ namespace StackWarsConsole
                 }
                 Console.Write("#");
             }
+        }
+
+        // Проверяет наличие созданных экземпляров
+        private bool ArmyAndEngineExist(Engine engine, Army a, Army b, bool logicalAnd)
+        {
+            if(logicalAnd)
+                return engine != null && a != null && b != null;
+            return engine == null || a == null || b == null;
         }
     }
 }
